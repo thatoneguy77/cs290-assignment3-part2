@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Assignment 4</title>
+		<script src='gists.js'></script>
+	</head>
+	<body>
+		<form>
+			<fieldset>
+				How many pages of gists would you like to see?<input type='number' name='how-many-pages'min='1' max = '5'><br>
+				<input type='checkbox' name='Python' value='Python'>I would like to see Python gists<br>
+				<input type='checkbox' name='JSON' value='JSON'>I would like to see JSON gists<br>
+				<input type='checkbox' name='JavaScript' value='JavaScript'>I would like to see JavaScript gists<br>
+				<input type='checkbox' name='SQL' value='SQL'>I would like to see SQL gists<br>
+				<input type='button' name='getGists' value='Search' onclick='findPages()'>
+			</fieldset>
+		</form>
+		<div>
+			<h1 style="float:right;">Gists</h1>
+			<ul id= 'gist-list' style="float:right; position:absolute; margin-left:70%;"></ul>
+		</div>
+		<div>
+			<h1>Favorites</h1>
+			<ul id= 'favorite-list'></ul>
+		</div>
+	</body>
+</html>
